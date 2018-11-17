@@ -13,8 +13,9 @@ cors = CORS(app, resources={r"/*": {"origins": "*"}})
 
 client = boto3.client('ses', region_name="eu-west-1")
 
-SENDER_EMAIL = 'mstuartflood@gmail.com'
-RECIPIENT_EMAIL = 'mstuartflood@gmail.com'
+
+SENDER_EMAIL = '-->INPUT SENDER EMAIL HERE<--'
+RECIPIENT_EMAIL = '-->INPUT RECIPIENT EMAIL HERE<--'
 
 
 @app.route('/new_enquiry', methods=["POST"])

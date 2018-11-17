@@ -5,7 +5,7 @@
 
 (2) Copy the repo
 
-`git clone [repo]`
+`git clone https://github.com/mstuartf/aws-contact-form.git`
 
 (3) Install packages
 
