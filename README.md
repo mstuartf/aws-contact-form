@@ -10,8 +10,11 @@
 (3) Install packages
 
 `$ cd aws-contact-form`
+
 `$ virtualenv env`
+
 `$ . env/bin/activate`
+
 `$ pip install -r requirements.txt`
 
 (4) Configure
