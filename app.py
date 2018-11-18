@@ -34,8 +34,6 @@ def send_email_endpoint():
 
 def send_email(recipient, subject, body_text):
 
-    print 'Sending email from {} to {} with subject {}'.format(os.environ.get('TMG_EMAIL'), recipient, subject)
-
     response = client.send_email(
         Destination={
             'ToAddresses': [
