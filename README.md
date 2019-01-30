@@ -15,6 +15,16 @@ Follow the prompts to enter your credentials. When finished you should see a ./a
 
 `$ git clone https://github.com/mstuartf/aws-contact-form.git`
 
+If you want to break the link to this project and start a new repo, run:
+
+`$ rm -rf .git`
+
+`$ git init`
+
+`$ git add .`
+
+`$ git commit -m "inital commit"`
+
 (3) Install packages
 
 `$ cd aws-contact-form`
@@ -36,6 +46,8 @@ Change the `aws_region`, `project_name` and `s3_bucket` in zappa_settings.json.
 `$ FLASK_APP=app.py flask run`
 
 Then send a POST request using Postman / python requests / etc. to http://127.0.0.1:5000/new_enquiry
+
+Any JSON payload is fine - it will just get forwarded to the recipient address.
 
 (6) Deploy
 
