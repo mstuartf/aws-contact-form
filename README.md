@@ -3,9 +3,17 @@
 
 (1) Install AWS cli and setup credentials
 
+`$ pip install awscli`
+
+In the top right corner of the AWS console, go to [your username] > My Security Credentials. Then click 'Create New Access Key' and download the file generated. (Best to keep the keys on screen as you will need them.)
+
+`$ aws configure`
+
+Follow the prompts to enter your credentials. When finished you should see a ./aws/credentials file in your root. 
+
 (2) Copy the repo
 
-`git clone https://github.com/mstuartf/aws-contact-form.git`
+`$ git clone https://github.com/mstuartf/aws-contact-form.git`
 
 (3) Install packages
 
